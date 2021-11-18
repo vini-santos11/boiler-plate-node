@@ -1,0 +1,11 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Api Documentation",
+    "descprition": "This is an Api Documentation",
+    "version": "1.0.0",
+    "contact": {
+      "email": "desenvolvedor@desenvolvedor.com"
+    }
+  }
+}
