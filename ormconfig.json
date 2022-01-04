@@ -4,5 +4,8 @@
   "host": "localhost",
   "username": "docker",
   "password": "123",
-  "database": "working"
+  "database": "working",
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
