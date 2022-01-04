@@ -1,0 +1,31 @@
+version: "3.7"
+
+services:
+  database_working:
+    image: postgres
+    container_name: database_working
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DB=working
+    volumes:
+      - pgdata:/data/postgres
+  app:
+    build: .
+    container_name: boilerplate
+    ports:
+      - 3333:3333
+    volumes:
+      - .:/usr/app
+    links:
+      - database_working
+    depends_on:
+      - database_working
+
+
+volumes:
+  pgdata:
+    driver: local
