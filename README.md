@@ -1,4 +1,4 @@
-# Api NodeJS a fim de estudos e aprimorar linguagem
+# Api NodeJS para estudos
 
 Para rodar a aplicação, utilize:
 
